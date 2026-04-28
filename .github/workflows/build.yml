@@ -16,7 +16,6 @@ jobs:
         uses: dabao1955/kernel_build_action@main
         with:
           kernel-url: https://android.googlesource.com/kernel/common
-          kernel-dir: msm-4.19
           kernel-branch: android14-6.1
           config: gki_defconfig
           arch: arm64
