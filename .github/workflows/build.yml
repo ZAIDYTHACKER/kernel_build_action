@@ -19,7 +19,7 @@ jobs:
           kernel-branch: android14-6.1
           config: gki_defconfig
           arch: arm64
-          aosp-gcc: true
+          aosp-gcc: false
           aosp-clang: true
           ksu: true
           ksu-version: main
