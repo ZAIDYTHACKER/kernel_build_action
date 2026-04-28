@@ -1,9 +1,9 @@
-name: Build Kernel
+name: Build GKI Kernel
 on:
   workflow_dispatch:
 
 jobs:
-  Build-Kernel:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Build Kernel
@@ -13,11 +13,10 @@ jobs:
           kernel-branch: android14-6.1
           config: gki_defconfig
           arch: arm64
+          android-version: 14
           aosp-gcc: true
           aosp-clang: true
           ksu: true
           ksu-version: main
-          android-version: 14
-          aosp-clang-version: r487747c
           disable-lto: true
           anykernel3: true
